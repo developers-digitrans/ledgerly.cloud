@@ -19,6 +19,20 @@
     --input: 214 32% 91%;
     --ring: 221 83% 53%;
 
+    --primary: 214 100% 37%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-50: 214 100% 95%;
+    --primary-100: 214 100% 90%;
+    --primary-200: 214 100% 80%;
+    --primary-300: 214 100% 70%;
+    --primary-400: 214 100% 60%;
+    --primary-500: 214 100% 37%;
+    --primary-600: 214 100% 30%;
+    --primary-700: 214 100% 25%;
+    --primary-800: 214 100% 20%;
+    --primary-900: 214 100% 15%;
+
     --radius: 0.5rem;
   }
 
@@ -35,6 +49,20 @@
     --border: 217 33% 17%;
     --input: 217 33% 17%;
     --ring: 224 76% 48%;
+
+    --primary: 214 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-50: 214 70% 10%;
+    --primary-100: 214 70% 15%;
+    --primary-200: 214 70% 20%;
+    --primary-300: 214 70% 40%;
+    --primary-400: 214 70% 60%;
+    --primary-500: 214 70% 70%;
+    --primary-600: 214 70% 80%;
+    --primary-700: 214 70% 85%;
+    --primary-800: 214 70% 90%;
+    --primary-900: 214 70% 95%;
   }
 }
 
@@ -92,4 +120,144 @@
 
 .animate-scroll {
   animation: scroll 25s linear infinite;
+}
+
+/* RTL Support for Arabic */
+html.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+html.rtl .ml-1,
+html.rtl .ml-2,
+html.rtl .ml-3,
+html.rtl .ml-4,
+html.rtl .ml-5,
+html.rtl .ml-6,
+html.rtl .ml-8,
+html.rtl .ml-10,
+html.rtl .ml-12 {
+  margin-left: 0;
+  margin-right: 0.25rem;
+  margin-right: 0.5rem;
+  margin-right: 0.75rem;
+  margin-right: 1rem;
+  margin-right: 1.25rem;
+  margin-right: 1.5rem;
+  margin-right: 2rem;
+  margin-right: 2.5rem;
+  margin-right: 3rem;
+}
+
+html.rtl .mr-1,
+html.rtl .mr-2,
+html.rtl .mr-3,
+html.rtl .mr-4,
+html.rtl .mr-5,
+html.rtl .mr-6,
+html.rtl .mr-8,
+html.rtl .mr-10,
+html.rtl .mr-12 {
+  margin-right: 0;
+  margin-left: 0.25rem;
+  margin-left: 0.5rem;
+  margin-left: 0.75rem;
+  margin-left: 1rem;
+  margin-left: 1.25rem;
+  margin-left: 1.5rem;
+  margin-left: 2rem;
+  margin-left: 2.5rem;
+  margin-left: 3rem;
+}
+
+html.rtl .pl-1,
+html.rtl .pl-2,
+html.rtl .pl-3,
+html.rtl .pl-4,
+html.rtl .pl-5,
+html.rtl .pl-6,
+html.rtl .pl-8,
+html.rtl .pl-10,
+html.rtl .pl-12 {
+  padding-left: 0;
+  padding-right: 0.25rem;
+  padding-right: 0.5rem;
+  padding-right: 0.75rem;
+  padding-right: 1rem;
+  padding-right: 1.25rem;
+  padding-right: 1.5rem;
+  padding-right: 2rem;
+  padding-right: 2.5rem;
+  padding-right: 3rem;
+}
+
+html.rtl .pr-1,
+html.rtl .pr-2,
+html.rtl .pr-3,
+html.rtl .pr-4,
+html.rtl .pr-5,
+html.rtl .pr-6,
+html.rtl .pr-8,
+html.rtl .pr-10,
+html.rtl .pr-12 {
+  padding-right: 0;
+  padding-left: 0.25rem;
+  padding-left: 0.5rem;
+  padding-left: 0.75rem;
+  padding-left: 1rem;
+  padding-left: 1.25rem;
+  padding-left: 1.5rem;
+  padding-left: 2rem;
+  padding-left: 2.5rem;
+  padding-left: 3rem;
+}
+
+html.rtl .left-0 {
+  left: auto;
+  right: 0;
+}
+
+html.rtl .right-0 {
+  right: auto;
+  left: 0;
+}
+
+html.rtl .text-left {
+  text-align: right;
+}
+
+html.rtl .text-right {
+  text-align: left;
+}
+
+html.rtl .flex-row {
+  flex-direction: row-reverse;
+}
+
+html.rtl .space-x-1 > *,
+html.rtl .space-x-2 > *,
+html.rtl .space-x-3 > *,
+html.rtl .space-x-4 > *,
+html.rtl .space-x-6 > * {
+  margin-left: 0;
+}
+
+html.rtl .space-x-1 > * + * {
+  margin-right: 0.25rem;
+}
+
+html.rtl .space-x-2 > * + * {
+  margin-right: 0.5rem;
+}
+
+html.rtl .space-x-3 > * + * {
+  margin-right: 0.75rem;
+}
+
+html.rtl .space-x-4 > * + * {
+  margin-right: 1rem;
+}
+
+html.rtl .space-x-6 > * + * {
+  margin-right: 1.5rem;
 }

@@ -4,6 +4,7 @@ import HeroSection from "./sections/HeroSection";
 import BenefitsSection from "./sections/BenefitsSection";
 import FeaturesSection from "./sections/FeaturesSection";
 import PricingSection from "./sections/PricingSection";
+import SubscribeSection from "./sections/SubscribeSection";
 import DemoModal from "./modals/DemoModal";
 import RegisterModal from "./modals/RegisterModal";
 import LoginModal from "./modals/LoginModal";
@@ -24,7 +25,7 @@ export default function Home({ isLoggedIn = false }: HomeProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden">
+    <div className="min-h-screen bg-white dark:bg-gray-900 relative overflow-hidden">
       <Navbar
         isLoggedIn={isLoggedIn}
         onOpenRegister={() => setIsRegisterModalOpen(true)}
@@ -36,6 +37,7 @@ export default function Home({ isLoggedIn = false }: HomeProps) {
         <FeaturesSection />
         <BenefitsSection />
         <PricingSection />
+        <SubscribeSection />
       </main>
 
       <DemoModal
